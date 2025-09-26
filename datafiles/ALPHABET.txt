@@ -1,0 +1,6 @@
+alphabet.txt text: ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁ
+йцукенгшщзхъфывапролджэячсмитьбюё
+1234567890
+qwertyuiopasdfghjklzxcvbnm
+QWERTYUIOPASDFGHJKLZXCVBNM
+[]():~`!@"#№;%:?*()_+@#$%^&*()_+|"{}?[];'\/хъжэ\.ХЪЖЭ/,
