@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Спрайты",
-    "path":"folders/Спрайты.yy",
+    "name":"Enemies",
+    "path":"folders/Спрайты/Enemies.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

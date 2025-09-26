@@ -30,7 +30,7 @@ function scrEnemyAlert(){
 			}
 			
 			
-		if distance_to_object(objPlayer) < 20  and attackCd  <= 0 and !collision_line(x,y,objPlayer.x,objPlayer.y,objWall,true,true){	
+		if distance_to_object(objPlayer) < 25  and attackCd  <= 0 and !collision_line(x,y,objPlayer.x,objPlayer.y,objWall,true,true){	
 		attackTime = 45
 		image_index = 0
 		

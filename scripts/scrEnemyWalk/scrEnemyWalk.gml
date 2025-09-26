@@ -19,11 +19,11 @@ function scrEnemyWalk(){
 		}
 		
 		
-		if place_meeting(x+hsp*2,y,objWall) or !place_meeting(x+hsp,y+1,objWall) {
+		if place_meeting(x+hsp*2,y,objWall) or !place_meeting(x+hsp*2,y+1,objWall) {
 			hsp *= -1	
 		}
 		
-		if distance_to_object(objPlayer) < 100 and !collision_line(x,y,objPlayer.x,objPlayer.y,objWall,true,true) and !global.dialogue{
+		if distance_to_object(objPlayer) < 100 and  !collision_line(x+5,y+5,objPlayer.x,objPlayer.y,objWall,true,true) and  !collision_line(x-5,y-5,objPlayer.x,objPlayer.y,objWall,true,true) and !global.dialogue{
 		state = statesEnemy.alert
 		vsp = -3
 		}

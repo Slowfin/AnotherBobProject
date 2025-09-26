@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"objAttackHitbox",
+  "%Name":"objRoomChange",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objAttackHitbox",
+  "name":"objRoomChange",
   "overriddenProperties":[],
   "parent":{
     "name":"Hitzones",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprAttackHitbox",
-    "path":"sprites/sprAttackHitbox/sprAttackHitbox.yy",
+    "name":"sprRoomChange",
+    "path":"sprites/sprRoomChange/sprRoomChange.yy",
   },
   "spriteMaskId":null,
   "visible":true,

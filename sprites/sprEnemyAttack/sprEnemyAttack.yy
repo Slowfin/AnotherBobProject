@@ -45,8 +45,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Спрайты",
-    "path":"folders/Спрайты.yy",
+    "name":"Slime",
+    "path":"folders/Спрайты/Enemies/Slime.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

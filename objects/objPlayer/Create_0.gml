@@ -15,7 +15,7 @@ basicSp = 1.5
 runSp = 3
 sp = basicSp
 hsp = 0
-jumpPower = 3
+jumpPower = 3.2
 vsp = 0
 oldVsp = vsp
 grounded = false
@@ -26,7 +26,7 @@ maxJumpTime = 10
 coyotTime = 0
 earlyTime = 0
 jumps = 0
-maxJumps = 2
+maxJumps = 1
 diedTime = 0
 // атака
 attackCdSet = 20
@@ -36,7 +36,7 @@ canGetHit = true
 damage = 20
 // дэш
 isDashing = false
-canDash = true
+canDash = false
 dashSp = 4
 dashTurn = 0
 dashTimeSet = 10

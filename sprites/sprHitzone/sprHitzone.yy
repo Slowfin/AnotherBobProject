@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Спрайты",
-    "path":"folders/Спрайты.yy",
+    "name":"Hitboxes",
+    "path":"folders/Спрайты/Hitboxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

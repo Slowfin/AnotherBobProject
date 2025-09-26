@@ -68,7 +68,7 @@ if groundedTime == 1 {
 // прыжок на земле или двойной
 
 if !isDashing and canMove = true  and canJump   {
-if (jumps < 1) and (key_jump and (coyotTime > 0) or (earlyTime > 0 and grounded)) 
+if ((jumps < 1) and (key_jump and (coyotTime > 0)) or (earlyTime > 0 and grounded)) 
 or (jumps > 0 and jumps < maxJumps and key_jump) or (coyotTime<= 0 and key_jump  and jumps < 1  and maxJumps > 1) {
 		if (coyotTime<= 0 and key_jump  and jumps < 1 and maxJumps > 1) {
 			jumps += 1	
@@ -107,7 +107,7 @@ coyotTime -= 1
 
 // слишком рано нажал на прыжок и он выполняется
 if coyotTime <= 0 and key_jump and !grounded and canMove = true {
-	earlyTime = 7
+	earlyTime = 10
 }
 if earlyTime > 0 {
 	earlyTime -= 1	
@@ -190,7 +190,7 @@ if place_meeting(x+sign(hsp),y,objWall) {
 	dashTime = 0
 }
 
-if grounded and key_down and !isDashing {
+if grounded and key_lay and !isDashing {
 	lay = true 
 	mask_index = spriteLay
 	sp = basicSp / 2

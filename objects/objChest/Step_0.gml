@@ -12,4 +12,5 @@ if HP ==  4{
 } if HP <= 0 {
 	image_index = 4
 	broken = true
+	
 }
