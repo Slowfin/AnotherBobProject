@@ -19,6 +19,7 @@ grv = global.grv
 basicSp = 0.5
 sp = 0.5
 
+canKnockback = true
 knockback = false
 HP = 100
 gotHit = false

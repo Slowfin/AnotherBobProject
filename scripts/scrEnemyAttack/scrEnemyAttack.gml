@@ -23,6 +23,8 @@ function scrEnemyAttack(){
 		//}
 		sprite_index  = sprEnemyAttack
 	}
+	
+	
 		
 	attackTime -= 1     
 	

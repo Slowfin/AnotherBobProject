@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"NPC",
-    "path":"folders/Спрайты/NPC.yy",
+    "name":"Спрайты",
+    "path":"folders/Спрайты.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrEnemyKnockback",
   "parent":{
-    "name":"Player",
-    "path":"folders/Скрипты/Player.yy",
+    "name":"Enemy",
+    "path":"folders/Скрипты/Enemy.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

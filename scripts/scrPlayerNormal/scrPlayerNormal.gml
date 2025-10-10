@@ -125,12 +125,12 @@ y += vsp
 // смерть
 	if HP <= 0 {
 	state = states.died
-	alarm[1] = 120
 			if money >  0 {
 			objCamera.alarm[0] = money
 			objCamera.isShaking = true
 			objCamera.shakePower = 2
 			} else {
+				alarm[1] = 120
 			objCamera.alarm[0] = 60  
 			objCamera.isShaking = true
 			objCamera.shakePower = 2	

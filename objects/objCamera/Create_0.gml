@@ -9,5 +9,6 @@ spd = 0
 isShaking = false
 shakePower = 1
 randomize()
+spawn = true
 
 yOffset = 0

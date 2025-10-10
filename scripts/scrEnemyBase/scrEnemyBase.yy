@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrEnemyBase",
   "parent":{
-    "name":"Player",
-    "path":"folders/Скрипты/Player.yy",
+    "name":"Скрипты",
+    "path":"folders/Скрипты.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

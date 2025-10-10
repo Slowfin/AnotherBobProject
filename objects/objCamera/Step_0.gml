@@ -15,7 +15,11 @@ y += (camY - y) * factor
 	} else if objPlayer.vsp < 7 and yOffset > 0 {
 	yOffset	-= 5
 	}
-	var factor = 0.05
+	if spawn {
+	var factor = 1
+	} else {
+	var factor = 0.05	
+	}
 x += ((objPlayer.x - x) - (320/camZoom) / 2) * factor
 y += ((objPlayer.y - y + yOffset) - (180/camZoom) / 1.6) * factor
 	if x < 0 {
@@ -29,3 +33,5 @@ y += ((objPlayer.y - y + yOffset) - (180/camZoom) / 1.6) * factor
 	y = room_height - 180/camZoom
 	}
 }
+
+spawn = false

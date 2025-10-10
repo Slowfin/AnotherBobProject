@@ -34,7 +34,7 @@ if place_meeting(x,y,objEnemy) {
 	HP -= objPlayer.damage	
 	gotHit = true
 	alarm[0] = 5
-	if other.turn2 != 1 and state != statesEnemy.knockback {
+	if other.turn2 != 1 and state != statesEnemy.knockback and canKnockback {
 	oldState = state
 	state = statesEnemy.knockback
 	knockback = 10
