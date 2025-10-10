@@ -15,6 +15,7 @@ function scrBossAttack2(){
 	for (var i = 0; bullets < 8; bullets += 1) {
 		var bullet = instance_create_layer(x,y-20,"Enemies",objSlimeBullet)
 		if bullets == 0 {
+		audio_play_sound(sndBossShoot,1.5,false,1,0,random_range(0.9,1.1))
 		bullet.hsp = -1       
 		bullet.vsp = -4
 		bullet.sp = 0.5

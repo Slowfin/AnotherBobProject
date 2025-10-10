@@ -78,6 +78,7 @@ or (jumps > 0 and jumps < maxJumps and key_jump) or (coyotTime<= 0 and key_jump 
 	jumps += 1
 	jumpTime = 0
 	earlyTime = 0
+	audio_play_sound(sndWoosh,1,false,1.5,0,random_range(0.9,1.1))
 	if jumps < 1  {
 	dashCd = 0
 	dashTime = 0
@@ -157,6 +158,7 @@ if attackCd > 0 {
 } 
 
 if key_dash and canDash and !isDashing and dashCd <= 0 and canMove = true and !lay {
+	audio_play_sound(sndWoosh3,1,false,1,0,random_range(0.9,1.1))
 	if !grounded {
 		dashCd = 1000	
 	} else {

@@ -12,6 +12,7 @@ function scrHitPlayer(){
 			objPlayer.knockbacky = y
 			objPlayer.alarm[2] = 20
 			objPlayer.savedState = objPlayer.state
+			audio_play_sound(sndGotHit,1,false)
 			if  objPlayer.HP > 0 {
 			objPlayer.state = states.knockback
 			}

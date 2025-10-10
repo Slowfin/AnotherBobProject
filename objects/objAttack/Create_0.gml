@@ -1,5 +1,6 @@
 randomize()
 
+
 turn = objPlayer.turn
 turn2 = objPlayer.turn2
 
@@ -45,10 +46,11 @@ if place_meeting(x,y,objEnemy) {
 	if turn2 = 1 {
 		objPlayer.vsp = -4.5
 	}
+	audio_play_sound(sndPunch,1,false,1,0,random_range(0.9,1.1))
 }
 
 // сундук
-if place_meeting(x,y,objChest) {
+else if place_meeting(x,y,objChest) {
 with objChest if place_meeting(x,y,objAttack) {
 	if !broken {
 	if HP > 1 {
@@ -73,4 +75,8 @@ for (var i = 0; i < coinDrop; i += 1) {
 	if objAttack.turn2 = 1 {
 		objPlayer.vsp = -4.5
 	}
-} }
+	audio_play_sound(sndPunch,1,false,1,0,random_range(0.9,1.1))
+}	
+ } else {
+	audio_play_sound(sndWoosh2,1,false,1,0,random_range(0.9,1.1))	 
+ }

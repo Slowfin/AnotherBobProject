@@ -14,10 +14,14 @@ function scrBossEnemySpawn(){
 	
 	for (var i = 0; bullets < 1; bullets += 1) {
 		var slime = instance_create_layer(x,y-20,"Enemies",objEnemySlime)
-		slime.hsp = -1       
-		slime.vsp = -7
-		slime.sp = 0.5
+		slime.hsp = 0      
+		slime.vsp = -5
 		slime.bossed = true
+		slime.state = statesEnemy.alert
+		slime.jump = true 
+		if bullets == 0 {
+			audio_play_sound(sndBossShoot,1.5,false,1,0,random_range(0.9,1.1))	
+		}
 	}
 		
 	attackTime -= 1     

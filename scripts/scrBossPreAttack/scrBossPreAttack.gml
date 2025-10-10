@@ -18,7 +18,7 @@ function scrBossPreAttack(){
 		
 	sprite_index  = sprBossPreRun
 	
-	sp = lerp(sp, 1, 0.05)
+	sp = lerp(sp, 1, 0.025)
 		
 	timeToAttack -= 1 
 	

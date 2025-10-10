@@ -11,6 +11,8 @@ enum statesBoss
 	died
 }
 
+audio_play_sound(sndBossSpawn,1,false)
+
 state =  statesBoss.spawn
 alarm[1] = 120
 
