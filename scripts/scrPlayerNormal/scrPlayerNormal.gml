@@ -235,13 +235,13 @@ if grounded and key_lay and !isDashing {
 	canMove = true	
 }
 
-	if place_meeting(x,y,objEnemy) and canGetHit  {
-			HP -= 1  	
-			invincFrames = invincFramesSet
-			objCamera.alarm[0] = 5
-			objCamera.isShaking = true
-			objCamera.shakePower = 2
-		}
+	//if place_meeting(x,y,objEnemy) and canGetHit  {
+	//		HP -= 1  	
+	//		invincFrames = invincFramesSet
+	//		objCamera.alarm[0] = 5
+	//		objCamera.isShaking = true
+	//		objCamera.shakePower = 2
+	//	}
 		
 	
 	

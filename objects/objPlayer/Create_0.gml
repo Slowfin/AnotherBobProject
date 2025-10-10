@@ -2,6 +2,7 @@ enum states
 {
 	normal,
 	stay,
+	knockback,
 	died
 }
 state = states.normal
@@ -67,7 +68,11 @@ canGetHit = true
 canMove = true
 canJump = true
 
+knockbackx = 0
+knockbacky = 0
+
 money = 0
+savedState = 0
 
 spawnX = x
 spawnY = y    

@@ -14,7 +14,14 @@ function scrBossIdle(){
 	attackCd -= 1  
 	
 	if attackCd  <= 0  {
-		if attackType == 0 {
+		if attacksToSpawn  <= 0 {
+		attacksToSpawn = 5
+		bullets = 0
+		attackCd = attackCdSet
+		attackTime = 30
+		timeToAttack = 30
+		state = statesBoss.enemySpawn
+		} else if attackType == 0 {
 		attackCd = attackCdSet
 		attackTime = irandom_range(150,200)
 		timeToAttack = 30
@@ -25,8 +32,7 @@ function scrBossIdle(){
 		} else {
 			hsp = 1
 		}
-		}
-		if attackType == 1 {
+		} else if attackType == 1 {
 		bullets = 0
 		attackCd = attackCdSet
 		attackTime = 30

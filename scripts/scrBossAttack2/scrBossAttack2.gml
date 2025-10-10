@@ -12,19 +12,20 @@ function scrBossAttack2(){
 		
 	sprite_index  = sprBossAttack
 	
-	for (var i = 0; bullets < 6; bullets += 1) {
+	for (var i = 0; bullets < 8; bullets += 1) {
 		var bullet = instance_create_layer(x,y-20,"Enemies",objSlimeBullet)
-		if bullet == 0 {
+		if bullets == 0 {
 		bullet.hsp = -1       
-		bullet.vsp = -2
+		bullet.vsp = -4
 		bullet.sp = 0.5
-		} else if bullet == 1 {
+		} else if bullets == 1 {
 		bullet.hsp = 1
-		bullet.vsp = -2	
+		bullet.vsp = -4	
 		bullet.sp = 0.5
 		} else {
 		bullet.hsp = choose(1,-1)
 		bullet.vsp = random_range(-4,-6)
+		bullet.sp = random_range(-3,3)
 		}
 	}
 		
@@ -34,5 +35,6 @@ function scrBossAttack2(){
 		state = statesBoss.idle	
 		attackCd = attackCdSet
 		attackType = irandom(1)
+		attacksToSpawn -= 1
 		}
 }

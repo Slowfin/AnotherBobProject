@@ -32,3 +32,5 @@ attackTime = 0
 timeToAttack = 60
 jump = false
 bullets = 0
+
+attacksToSpawn = 5

@@ -2,6 +2,7 @@ switch (state)
 {
 	case states.normal: scrPlayerNormal() break
 	case states.died: scrPlayerDied() break
+	case states.knockback: scrPlayerKnockback() break
 	case states.stay: scrPlayerStay() break}
 
 mask_index = sprPlayer

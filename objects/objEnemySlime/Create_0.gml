@@ -27,3 +27,5 @@ attackCdSet = 40
 attackCd = attackCdSet
 attackType = irandom(1)
 jump = false
+
+bossed = false

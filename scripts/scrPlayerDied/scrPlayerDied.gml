@@ -9,8 +9,8 @@ instance_create_layer(x,y,"Player",objCoin)
 		alarm[1] = 60	
 	}
 	sprite_index = spriteDie
-	if objCamera.isShaking {
+		if alarm[1] > 60 { 
 		image_angle += 15
-	}	
+		} 
 	
 }

@@ -4,6 +4,7 @@ function scrEnemyBase(){
 		
 
 		scrPlayerCollision()
+		scrHitPlayer()
 
 		
 				if knockback and state != statesEnemy.knockback {

@@ -9,37 +9,22 @@ function scrBossEnemySpawn(){
 		
 	scrEnemyBase()	
 	
-
-	if attackTime >= 20 {
-		hsp = 0
-		sprite_index  = sprEnemyPrejump
-	}
-	else {
-		if once == 1 {
-			hsp = hspSet
-			vsp  = -4
-			jump = true
-			once = 0
-		}
-		sprite_index  = sprEnemyJump
-	}
+		
+	sprite_index  = sprBossAttack
 	
-		if jump {
-			sp = basicSp * 4
-		}
+	for (var i = 0; bullets < 1; bullets += 1) {
+		var slime = instance_create_layer(x,y-20,"Enemies",objEnemySlime)
+		slime.hsp = -1       
+		slime.vsp = -7
+		slime.sp = 0.5
+		slime.bossed = true
+	}
 		
 	attackTime -= 1     
-	if place_meeting(x,y+1,objWall) and jump and attackTime < 18 {
-				jump = false
-				state = statesEnemy.alert	
-		attackCd = attackCdSet
-		attackType = irandom(1)
-			}
 	
-	//if attackTime <= 0  {
-	//	state = statesEnemy.alert	
-	//	attackCd = attackCdSet
-	//	attackType = irandom(1)
-	//	jump  = false
-	//	}
+	if attackTime <= 0  {
+		state = statesBoss.idle	
+		attackCd = attackCdSet * 2
+		attackType = irandom(1)
+		}
 }

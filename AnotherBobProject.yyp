@@ -116,6 +116,7 @@
     {"id":{"name":"scrHitPlayer","path":"scripts/scrHitPlayer/scrHitPlayer.yy",},},
     {"id":{"name":"scrPlayerCollision","path":"scripts/scrPlayerCollision/scrPlayerCollision.yy",},},
     {"id":{"name":"scrPlayerDied","path":"scripts/scrPlayerDied/scrPlayerDied.yy",},},
+    {"id":{"name":"scrPlayerKnockback","path":"scripts/scrPlayerKnockback/scrPlayerKnockback.yy",},},
     {"id":{"name":"scrPlayerNormal","path":"scripts/scrPlayerNormal/scrPlayerNormal.yy",},},
     {"id":{"name":"scrPlayerStay","path":"scripts/scrPlayerStay/scrPlayerStay.yy",},},
     {"id":{"name":"seqShiza","path":"sequences/seqShiza/seqShiza.yy",},},

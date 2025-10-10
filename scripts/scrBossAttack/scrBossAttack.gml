@@ -9,6 +9,7 @@ function scrBossAttack(){
 		
 	scrEnemyBase()	
 	
+	
 	sp = basicSp
 	
 	if place_meeting(x+hsp*5,y,objWall) or !place_meeting(x+hsp*5,y+1,objWall) {
@@ -32,5 +33,6 @@ function scrBossAttack(){
 		state = statesBoss.idle	
 		attackCd = attackCdSet
 		attackType = irandom(1)
+		attacksToSpawn -= 1
 		}
 }
