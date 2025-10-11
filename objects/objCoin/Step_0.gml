@@ -29,6 +29,8 @@ hsp = lerp(hsp,0,0.035)
 if place_meeting(x,y,objPlayer) and objPlayer.state != states.died {
 	instance_destroy()
 	objPlayer.money += 1
+	audio_stop_sound(sndCoin)
+	audio_play_sound(sndCoin,1,false,1,0,random_range(0.9,1.1))
 }	
 
 angle  += -hsp * 3

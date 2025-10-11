@@ -13,13 +13,14 @@ function scrEnemyAlert(){
 		} else {  
 			sprite_index = sprEnemyRun
 		}
+		if !jump {
 		if objPlayer.x > x {
 			hsp = 1
 			image_xscale = 1
 		} else if objPlayer.x < x  {
 			hsp = -1
 			image_xscale = -1	
-		} 
+		} }
 		
 		if attackCd > -1 {
 		attackCd -= 1

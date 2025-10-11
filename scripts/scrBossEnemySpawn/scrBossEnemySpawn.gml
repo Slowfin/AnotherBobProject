@@ -16,8 +16,9 @@ function scrBossEnemySpawn(){
 		var slime = instance_create_layer(x,y-20,"Enemies",objEnemySlime)
 		slime.hsp = 0      
 		slime.vsp = -5
+		slime.sp = 0.1
 		slime.bossed = true
-		slime.state = statesEnemy.alert
+		slime.state = statesEnemy.walk
 		slime.jump = true 
 		if bullets == 0 {
 			audio_play_sound(sndBossShoot,1.5,false,1,0,random_range(0.9,1.1))	

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"musBoss1",
+  "%Name":"sndFart",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":50.823536,
-  "name":"musBoss1",
+  "duration":3.2,
+  "name":"sndFart",
   "parent":{
     "name":"Звуки",
     "path":"folders/Звуки.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"musBoss1.ogg",
+  "soundFile":"sndFart.mp3",
   "type":0,
-  "volume":0.5,
+  "volume":1.0,
 }
