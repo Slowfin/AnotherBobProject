@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Walls",
-    "path":"folders/Спрайты/Walls.yy",
+    "name":"Foreground",
+    "path":"folders/Спрайты/Walls/Foreground.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

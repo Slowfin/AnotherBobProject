@@ -25,7 +25,7 @@ if objPlayer.key_interact and global.dialogue and canSkip <= 0 and char >  3 {
 
 }
 
-if messageCount > messageMax {
+if messageCount > messageMax and global.dialogue {
 		global.dialogue = false	
 		char = 0.6
 		messageCount = 0

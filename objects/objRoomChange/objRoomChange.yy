@@ -35,5 +35,5 @@
     "path":"sprites/sprRoomChange/sprRoomChange.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

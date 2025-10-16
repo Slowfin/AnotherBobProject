@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Walls",
-    "path":"folders/Спрайты/Walls.yy",
+    "path":"folders/Спрайты/Walls/Walls.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

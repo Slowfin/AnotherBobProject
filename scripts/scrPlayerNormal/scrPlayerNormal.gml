@@ -223,10 +223,7 @@ if grounded and key_lay and !isDashing {
 	vsp += 0.1
 	}
 	
-	if place_meeting(x,y,objInteractable) and key_interact and global.dialogue == false  {
-		global.dialogue = true	
-		objNPC.canSkip = 5
-	}
+	
 	
 	if global.dialogue  {
 	hsp = 0 
