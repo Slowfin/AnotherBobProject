@@ -2,6 +2,7 @@ if pet {
 	sprite_index = sprPetPet
 	objPlayer.canMove = false
 	objPlayer.hsp = 0
+	objPlayer.vsp = 0
 	objPlayer.sprite_index = objPlayer.spriteLove
 } else {
 	sprite_index = sprPet

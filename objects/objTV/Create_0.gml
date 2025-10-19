@@ -1,6 +1,7 @@
 mode = 0
 channel = 0
 maxChannel = 3
+music = 0
 
 if channel == 0 {
 	spriteTV = sprTVOn1	
