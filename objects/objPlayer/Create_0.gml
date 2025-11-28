@@ -10,6 +10,12 @@ state = states.normal
 accel = 0.2
 cheesed = false
 
+nextX = 0
+nextY = 0
+nextRoom = 0
+global.fadeAlpha = 1
+
+
 global.grv = 0.25
 grv = global.grv
 basicSp = 1.5

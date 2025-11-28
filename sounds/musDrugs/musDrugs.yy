@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"musDrugs",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":2,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":12.923084,
+  "exportDir":"",
   "name":"musDrugs",
   "parent":{
     "name":"Звуки",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"musDrugs.ogg",
-  "type":2,
   "volume":1.0,
 }

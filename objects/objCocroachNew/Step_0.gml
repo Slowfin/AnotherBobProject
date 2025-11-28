@@ -26,6 +26,7 @@ if global.dialogue and objDialogue.messageDraw != objDialogue.message[objDialogu
 
 if place_meeting(x,y,objPlayer) and objPlayer.key_interact and global.dialogue == false and objDialogue.canSkip <= 0  {
 		global.dialogue = true	
+		objDialogue.chatWith = object_index
 		objDialogue.canSkip = 5
 	}
 	

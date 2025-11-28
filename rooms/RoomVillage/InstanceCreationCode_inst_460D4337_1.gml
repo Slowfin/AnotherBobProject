@@ -1,4 +1,4 @@
-activated = 1
-nextRoom = RoomHomeIn
-nextX = 105
-nextY = 136
+activated = 0
+nextRoom = CheeseCaveEntrance
+nextX = 15
+nextY = 171
