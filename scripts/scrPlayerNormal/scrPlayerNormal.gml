@@ -65,16 +65,28 @@ if groundedTime == 1 {
 	dashCd = 0	
 }
 
-// прыжок на земле или двойной
+// слишком рано нажал на прыжок и он выполняется
+if coyotTime <= 0 and key_jump and !grounded and canMove = true {
+	earlyTime = 10
+}
+if earlyTime > 0 {
+	earlyTime -= 1	
+}
 
-if !isDashing and canMove = true  and canJump   {
-if ((jumps < 1) and (key_jump and (coyotTime > 0)) or (earlyTime > 0 and grounded)) 
+// прыжок на земле или двойной
+if !isDashing and canMove = true  and canJump and wallGrab <= 0   {
+if ((jumps < 1) and (key_jump and coyotTime > 0) or (earlyTime > 0 and grounded))
 or (jumps > 0 and jumps < maxJumps and key_jump) or (coyotTime<= 0 and key_jump  and jumps < 1  and maxJumps > 1) {
 		if (coyotTime<= 0 and key_jump  and jumps < 1 and maxJumps > 1) {
 			jumps += 1	
 		}
-	var psJump = part_system_create(parJump)
-	part_particles_burst(psJump,x,y+8,parJump)
+	if jumps < 1 {
+		var psJump = part_system_create(parJump)
+		part_particles_burst(psJump,x,y+8,parJump)
+	} else {
+		var psJumpDouble = part_system_create(parJumpDouble)
+		part_particles_burst(psJumpDouble,x,y+8,parJumpDouble)	
+	}
 	vsp = -jumpPower
 	coyotTime = 0
 	jumps += 1
@@ -108,13 +120,7 @@ if !grounded {
 coyotTime -= 1	
 }
 
-// слишком рано нажал на прыжок и он выполняется
-if coyotTime <= 0 and key_jump and !grounded and canMove = true {
-	earlyTime = 10
-}
-if earlyTime > 0 {
-	earlyTime -= 1	
-}
+
 
 // от застревания в стене
 if place_meeting(x+sign(hsp),y,objWall) and place_meeting(x,y+sign(vsp),objWall) {
@@ -248,12 +254,19 @@ if grounded and key_lay and !isDashing {
 	
 if place_meeting(x+sign((move)*4),y,objWall) {
 	wallGrab = 5
+	dashCd = 0
 	saveMove = sign(move)
 } else if wallGrab > 0 {
 	wallGrab -= 1	
 }
+
+if wallGrab > 0  {
+	if vsp > 0.5  {
+	vsp = 0.5
+	}
+}	
 		
-if wallGrab > 0 and ((key_jump and coyotTime > 0) or (earlyTime > 0 )) and !grounded {
+if wallGrab > 0 and ((key_jump) or (earlyTime > 0 ))  {
 	var psJump = part_system_create(parJump)
 	part_particles_burst(psJump,x,y+8,parJump)
 	hsp = (saveMove * -1) * 5
@@ -262,6 +275,7 @@ if wallGrab > 0 and ((key_jump and coyotTime > 0) or (earlyTime > 0 )) and !grou
 	jumpTime = 0
 	earlyTime = 0
 	jumps = 1
+	wallGrab = 0
 	dashCd = 0
 	audio_play_sound(sndWoosh,1,false,1.5,0,random_range(0.9,1.1))
 	image_index = 0
