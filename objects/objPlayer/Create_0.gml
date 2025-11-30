@@ -16,7 +16,7 @@ nextRoom = 0
 global.fadeAlpha = 0
 
 //апгрейды
-maxJumps = 1
+maxJumps = 2
 canDash = true
 
 global.grv = 0.25
@@ -42,6 +42,7 @@ wallGrab = 0
 diedTime = 0
 respX = x
 respY = y
+global.respawn = false
 // атака
 attackCdSet = 20
 attackCd = 0

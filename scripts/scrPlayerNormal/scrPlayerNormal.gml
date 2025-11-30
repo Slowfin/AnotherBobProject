@@ -184,8 +184,8 @@ if dashCd > 0 {
 if dashTime > 0 {
 	isDashing = true
 		dashTime -= 1
-
-		part_particles_burst(0,x,y,parDash)
+		var psDash = part_system_create(parDash)
+		part_particles_burst(psDash,x,y,parDash)
 		vsp = 0
 		hsp =  dashTurn * dashSp
 } else {
@@ -261,11 +261,13 @@ if wallGrab > 0 and ((key_jump and coyotTime > 0) or (earlyTime > 0 )) and !grou
 	coyotTime = 0
 	jumpTime = 0
 	earlyTime = 0
+	jumps = 1
+	dashCd = 0
 	audio_play_sound(sndWoosh,1,false,1.5,0,random_range(0.9,1.1))
 	image_index = 0
 	}
 	
-	if grounded and place_meeting(x+32,y+1,objWall) and place_meeting(x-32,y+1,objWall) {
+	if grounded and place_meeting(x+16,y+1,objWall) and place_meeting(x-16,y+1,objWall)  {
 		respX = x
 		respY = y
 	}	

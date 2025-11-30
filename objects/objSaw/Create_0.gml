@@ -1,3 +1,3 @@
 randomize()
 angle = 0
-angleRot = choose(-5,5)
+angleRot = choose(random_range(-4,-6),random_range(4,6))
