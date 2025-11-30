@@ -67,6 +67,7 @@ spriteDie = sprPlayerDie
 spriteLay = sprPlayerLay
 spriteLayCrawl = sprPlayerLayCrawl
 spriteLove = sprPlayerLove
+spriteWallGrab = sprPlayerGrab
 lay = false
 turn = 0
 turn2 = 0

@@ -25,7 +25,7 @@ if global.respawn  and global.fadeAlpha < 1 {
 	canMove = false
 	hsp = 0
 	vsp = 0
-	global.fadeAlpha += 0.06
+	global.fadeAlpha += 0.03
 } if !global.respawn and global.fadeAlpha > 0 {
 	global.fadeAlpha -= 0.06
 }

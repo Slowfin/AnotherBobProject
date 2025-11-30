@@ -24,7 +24,10 @@ if lay {
 if isDashing  {
 	sprite_index = spriteDash
 }	else if !grounded {
-			if jumps >= 2 {
+			if wallGrab > 0 {
+			sprite_index = spriteWallGrab
+		}
+			else if jumps >= 2 {
 		sprite_index = spriteJumpDouble
 	}		else {
 		sprite_index = spriteJump

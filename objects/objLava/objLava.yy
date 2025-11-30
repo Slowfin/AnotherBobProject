@@ -8,8 +8,8 @@
   "name":"objLava",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Объекты/Walls.yy",
+    "name":"Obstacles",
+    "path":"folders/Объекты/Obstacles.yy",
   },
   "parentObjectId":{
     "name":"objSaw",

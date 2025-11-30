@@ -222,6 +222,7 @@
     {"id":{"name":"sprPlayerDash","path":"sprites/sprPlayerDash/sprPlayerDash.yy",},},
     {"id":{"name":"sprPlayerDie","path":"sprites/sprPlayerDie/sprPlayerDie.yy",},},
     {"id":{"name":"sprPlayerFall","path":"sprites/sprPlayerFall/sprPlayerFall.yy",},},
+    {"id":{"name":"sprPlayerGrab","path":"sprites/sprPlayerGrab/sprPlayerGrab.yy",},},
     {"id":{"name":"sprPlayerHatless","path":"sprites/sprPlayerHatless/sprPlayerHatless.yy",},},
     {"id":{"name":"sprPlayerHomeTile","path":"sprites/sprPlayerHomeTile/sprPlayerHomeTile.yy",},},
     {"id":{"name":"sprPlayerHouse","path":"sprites/sprPlayerHouse/sprPlayerHouse.yy",},},
