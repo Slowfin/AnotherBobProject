@@ -13,8 +13,11 @@ cheesed = false
 nextX = 0
 nextY = 0
 nextRoom = 0
-global.fadeAlpha = 1
+global.fadeAlpha = 0
 
+//апгрейды
+maxJumps = 1
+canDash = true
 
 global.grv = 0.25
 grv = global.grv
@@ -33,8 +36,12 @@ maxJumpTime = 10
 coyotTime = 0
 earlyTime = 0
 jumps = 0
-maxJumps = 1
+wallGrab = 0
+
+//смерть
 diedTime = 0
+respX = x
+respY = y
 // атака
 attackCdSet = 20
 attackCd = 0
@@ -43,7 +50,6 @@ canGetHit = true
 damage = 20
 // дэш
 isDashing = false
-canDash = false
 dashSp = 4
 dashTurn = 0
 dashTimeSet = 10

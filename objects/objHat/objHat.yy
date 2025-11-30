@@ -10,8 +10,8 @@
   "name":"objHat",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Объекты/Player.yy",
+    "name":"AnotherBobProject",
+    "path":"AnotherBobProject.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

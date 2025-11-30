@@ -29,7 +29,7 @@ y = objPlayer.y + (turn2 * 19)
 // враги
 if place_meeting(x,y,objEnemy) {
 	var psHit = part_system_create(parHit)
-	part_particles_burst(psHit,x+ (turn * 4),y,parHit)
+	part_particles_burst(psHit,x+ (turn * 7),y,parHit)
 	objCamera.alarm[0] = 3
 	objCamera.isShaking = true
 	objCamera.shakePower = 0.5

@@ -1,5 +1,5 @@
-x = spawnX 
-y = spawnY
+x = respX
+y = respY
 state = states.normal
 HP = maxHP
 image_angle = 0
