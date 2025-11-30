@@ -73,6 +73,8 @@ or (jumps > 0 and jumps < maxJumps and key_jump) or (coyotTime<= 0 and key_jump 
 		if (coyotTime<= 0 and key_jump  and jumps < 1 and maxJumps > 1) {
 			jumps += 1	
 		}
+	var psJump = part_system_create(parJump)
+	part_particles_burst(psJump,x,y+8,parJump)
 	vsp = -jumpPower
 	coyotTime = 0
 	jumps += 1
@@ -182,6 +184,8 @@ if dashCd > 0 {
 if dashTime > 0 {
 	isDashing = true
 		dashTime -= 1
+		var psDash = part_system_create(parDash)
+		part_particles_burst(psDash,x,y,parDash)
 		vsp = 0
 		hsp =  dashTurn * dashSp
 } else {

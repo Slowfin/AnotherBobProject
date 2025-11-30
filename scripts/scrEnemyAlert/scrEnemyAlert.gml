@@ -50,7 +50,7 @@ function scrEnemyAlert(){
 		
 		
 		if place_meeting(x+sign(hsp),y,objWall) {
-			jump = true
+
 			vsp = -4
 			x -= hsp
 		}
