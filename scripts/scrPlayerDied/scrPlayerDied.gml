@@ -10,7 +10,7 @@ instance_create_layer(x,y,"Player",objCoin)
 	}
 	sprite_index = spriteDie
 		if alarm[1] > 60 { 
-		image_angle += 15
+		angle += 15
 		} 
 	
 }

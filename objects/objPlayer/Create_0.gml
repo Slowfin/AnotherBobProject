@@ -90,8 +90,9 @@ money = 0
 savedState = 0
 
 spawnX = x
-spawnY = y    
+spawnY = y 
 
+angle = 0 
 
 
 key_up = keyboard_check(vk_up)

@@ -284,7 +284,7 @@ if wallGrab > 0 and ((key_jump) or (earlyTime > 0 ))  {
 	image_index = 0
 	}
 	
-	if grounded and place_meeting(x+16,y+1,objWall) and place_meeting(x-16,y+1,objWall)  {
+	if grounded and place_meeting(x+16,y+1,objWall) and place_meeting(x-16,y+1,objWall) and !place_meeting(x,y,objSaw) {
 		respX = x
 		respY = y
 	}	
